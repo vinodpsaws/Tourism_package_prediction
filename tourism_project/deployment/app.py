@@ -10,10 +10,10 @@ from config import HF_REPO_ID
 model_path = hf_hub_download(repo_id=HF_REPO_ID, filename="best_tourism_package_prediction_model_v1.joblib")
 model = joblib.load(model_path)
 
-# Streamlit UI for Machine Failure Prediction
+# Streamlit UI for Tourism Package Prediction...
 st.title("Tour Package Prediction App")
 st.write("""
-This application predicts the likelihood of a machine failing based on its operational parameters.
+This application predicts the likelihood of a customer selecting the package parameters.
 Please enter the sensor and configuration data below to get a prediction.
 """)
 

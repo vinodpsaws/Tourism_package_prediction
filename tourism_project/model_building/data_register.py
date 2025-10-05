@@ -5,7 +5,6 @@ import os
 from tourism_project.config import HF_REPO_ID
 
 
-
 repo_id = HF_REPO_ID
 repo_type = "dataset"
 
