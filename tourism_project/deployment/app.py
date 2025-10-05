@@ -66,6 +66,6 @@ input_data = pd.DataFrame([{
 
 if st.button("Predict Failure"):
     prediction = model.predict(input_data)[0]
-    result = "Package selected" if prediction == 1 else "No Failure"
+    result = "Package selected" if prediction == 1 else "Package not selected"
     st.subheader("Prediction Result:")
     st.success(f"The model predicts: **{result}**")
