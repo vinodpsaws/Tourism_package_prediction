@@ -34,6 +34,11 @@ OwnCar = st.selectbox("Own Car", ["Yes", "No"])
 NumberOfChildrenVisiting = st.number_input("Number of children visiting", min_value=0, max_value=5, value=0, step=1)
 Designation = st.selectbox("Designation", ["Manager", "Executive", "Senior Manager", "VP"])
 MonthlyIncome = st.number_input("Monthly Income", min_value=0, max_value=100000, value=50000, step=100)
+PitchSatisfactionScore = st.number_input("Pitch Satisfaction Score", min_value=1, max_value=5, value=3, step=1)
+NumberOfFollowups = st.number_input("Number of Followups", min_value=1, max_value=10, value=2, step=1)
+DurationOfPitch = st.number_input("Duration of Pitch", min_value=1, max_value=100, value=30, step=1)
+ProductPitched = st.selectbox("Product Pitched", ["Basic", "Deluxe", "Standard","Super Deluxe", "King"])
+
 
 
 # Assemble input into DataFrame
@@ -41,13 +46,17 @@ input_data = pd.DataFrame([{
     'Age': Age,
     'TypeofContact': TypeofContact,
     'CityTier': CityTier,
+    'DurationOfPitch': DurationOfPitch,
     'Occupation': Occupation,
     'Gender': Gender,
     'NumberOfPersonVisiting': NumberOfPersonVisiting,
+    'NumberOfFollowups': NumberOfFollowups,
+    'ProductPitched': ProductPitched,
     'PreferredPropertyStar': PreferredPropertyStar,
     'MaritalStatus': MaritalStatus,
     'NumberOfTrips': NumberOfTrips,
     'Passport': Passport,
+    'PitchSatisfactionScore': PitchSatisfactionScore,
     'OwnCar': OwnCar,
     'NumberOfChildrenVisiting': NumberOfChildrenVisiting,
     'Designation': Designation,
